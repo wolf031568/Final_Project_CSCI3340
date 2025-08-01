@@ -36,7 +36,7 @@ def show_login():
             messagebox.showinfo("Success", f"Welcome {username}!")
             root.destroy()
             from dashboard import show_dashboard
-            show_dashboard()
+            show_dashboard(username)
         else:
             messagebox.showerror("Error", "Invalid username or password")
 

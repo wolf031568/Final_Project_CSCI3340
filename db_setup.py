@@ -34,7 +34,14 @@ def init_db():
             content TEXT NOT NULL
         )
     """)
-
+    # Event Calender table to store user club subscriptions
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS subscriptions (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT NOT NULL,
+        club TEXT NOT NULL
+    )
+    """)
     conn.commit()
     conn.close()
 

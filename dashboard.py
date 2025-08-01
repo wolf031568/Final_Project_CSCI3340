@@ -1,6 +1,6 @@
 import tkinter as tk
 
-def show_dashboard():
+def show_dashboard(username):
     root = tk.Tk()
     root.title("Engineer Social Dashboard")
     root.geometry("600x400")
@@ -13,7 +13,7 @@ def show_dashboard():
 
     def open_event_calendar():
         from event_calendar import open_calendar
-        open_calendar()
+        open_calendar(username)
 
     def open_bulletin():
         from bulletin import open_bulletin
