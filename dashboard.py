@@ -8,19 +8,19 @@ def show_dashboard():
     tk.Label(root, text="Welcome to Engineer Social!", font=("Helvetica", 18)).pack(pady=20)
 
     def open_activities():
-        from activities import open_activities  
+        from activities import open_activities
         open_activities()
 
     def open_event_calendar():
-        from event_calendar import open_calendar  
+        from event_calendar import open_calendar
         open_calendar()
 
     def open_bulletin():
-        from bulletin import open_bulletin  
+        from bulletin import open_bulletin
         open_bulletin()
 
     def open_emergency():
-        from emergency import open_emergency 
+        from emergency import open_emergency
         open_emergency()
 
     tk.Button(root, text="Activities", width=20, command=open_activities).pack(pady=5)
